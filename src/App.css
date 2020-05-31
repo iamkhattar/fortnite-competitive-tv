@@ -1,0 +1,12 @@
+.mainApp {
+  height: 100vh;
+  width: 100vw;
+}
+
+.landingPage {
+  background-color: #00aff8;
+}
+
+.button-height {
+  height: 10vh;
+}

@@ -25,7 +25,7 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     width: 1024,
     height: 1024,
-    title: "Chat desktop app demo",
+    title: "fortnite-competitive-tv",
   });
 
   mainWindow.maximize();
