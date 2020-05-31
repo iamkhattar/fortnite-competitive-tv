@@ -21,6 +21,7 @@ function createWindow() {
     height: 1024,
     title: "Chat desktop app demo",
   });
+  mainWindow.maximize();
   mainWindow.loadURL(
     isDev
       ? "http://localhost:3000"
