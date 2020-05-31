@@ -8,12 +8,15 @@ const Landing = () => {
     <div className="mainApp landingPage">
       <div className="container h-100">
         <div className="h-25"></div>
-        <div className="row align-items-center h-25 justify-content-center">
+        <div className="mt-4 row align-items-center h-25 justify-content-center">
           <div className="col-9">
-            <img src={require("../../assets/fortnite-logo.png")} width="100%" />
+            <img
+              src={require("../../assets/fortnite-logo.png")}
+              className="fortnite-logo"
+            />
           </div>
         </div>
-        <div className="row align-items-center button-height justify-content-center mt-5">
+        <div className="mt-3 row align-items-center button-height justify-content-center">
           <div className="col-3 h-100">
             <button className="landing-button">
               <Link

@@ -20,3 +20,8 @@
   font-weight: bold;
   font-family: Burbank;
 }
+
+.fortnite-logo {
+  object-fit: contain;
+  width: 100%;
+}
