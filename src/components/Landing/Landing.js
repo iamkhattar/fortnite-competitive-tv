@@ -13,6 +13,7 @@ const Landing = () => {
             <img
               src={require("../../assets/fortnite-logo.png")}
               className="fortnite-logo"
+              alt="Fortnite Logo"
             />
           </div>
         </div>

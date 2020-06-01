@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Leaderboard.css";
 
 const Leaderboard = () => {
@@ -8,6 +8,7 @@ const Leaderboard = () => {
         className="leaderboard-frame w-100 h-100"
         id="leaderboardFrame"
         src="https://www.fortnitetracker.com/events"
+        title="Leaderboard"
       />
     </div>
   );
