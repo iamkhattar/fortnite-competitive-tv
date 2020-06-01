@@ -15,6 +15,15 @@ const KeyStrokeHandler = () => {
     window.addEventListener("keydown", handleEscButtonClick);
   }, [history]);
 
+  useEffect(() => {
+    setInterval(function () {
+      var elem = document.activeElement;
+      if (elem && elem.tagName === "IFRAME") {
+        document.activeElement.blur();
+      }
+    }, 500);
+  }, []);
+
   return <React.Fragment></React.Fragment>;
 };
 

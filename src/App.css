@@ -10,3 +10,7 @@
 .button-height {
   height: 10vh;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
