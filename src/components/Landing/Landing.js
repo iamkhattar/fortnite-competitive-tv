@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
-    <div className="mainApp landingPage">
+    <div className="mainApp landingPage" id="app">
       <div className="container h-100">
-        <div className="h-25"></div>
-        <div className="mt-4 row align-items-center h-25 justify-content-center">
+        <div className="spacer"></div>
+        <div className="row align-items-center h-25 justify-content-center">
           <div className="col-9">
             <img
               src={require("../../assets/fortnite-logo.png")}
@@ -16,7 +16,7 @@ const Landing = () => {
             />
           </div>
         </div>
-        <div className="mt-3 row align-items-center button-height justify-content-center">
+        <div className="mt-5 row align-items-center button-height justify-content-center">
           <div className="col-3 h-100">
             <button className="landing-button">
               <Link

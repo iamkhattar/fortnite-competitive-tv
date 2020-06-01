@@ -8,10 +8,11 @@ const KeyStrokeHandler = () => {
   useEffect(() => {
     const handleEscButtonClick = (e) => {
       if (e.keyCode === 27) {
+        e.preventDefault();
         history.push("/");
       }
     };
-    document.addEventListener("keydown", handleEscButtonClick);
+    window.addEventListener("keydown", handleEscButtonClick);
   }, [history]);
 
   return <React.Fragment></React.Fragment>;
