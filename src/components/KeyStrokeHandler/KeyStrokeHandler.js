@@ -21,7 +21,7 @@ const KeyStrokeHandler = () => {
       if (elem && elem.tagName === "IFRAME") {
         document.activeElement.blur();
       }
-    }, 500);
+    }, 100);
   }, []);
 
   return <React.Fragment></React.Fragment>;
