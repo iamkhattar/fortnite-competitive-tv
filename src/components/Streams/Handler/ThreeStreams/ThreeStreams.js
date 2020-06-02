@@ -4,7 +4,7 @@ import "./ThreeStreams.css";
 const ThreeStreams = ({ stream1, stream2, stream3 }) => {
   const url1 = "https://player.twitch.tv/?channel=" + stream1;
   const url2 = "https://player.twitch.tv/?channel=" + stream2;
-  const url3 = "https://player.twitch.tv/?channel=" + stream2;
+  const url3 = "https://player.twitch.tv/?channel=" + stream3;
   return (
     <div className="mainApp">
       <div className="row row-height w-100 m-0 p-0">
