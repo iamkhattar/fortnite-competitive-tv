@@ -5,6 +5,7 @@ import { useStoreState, useStoreActions } from "easy-peasy";
 const AddStreams = () => {
   const usernames = useStoreState((state) => state.usernames);
   const remove = useStoreActions((actions) => actions.remove);
+  const add = useStoreActions((actions) => actions.add);
   const [newStream, setNewStream] = useState("");
   return (
     <div className="mainApp">
@@ -26,8 +27,10 @@ const AddStreams = () => {
       <div>
         <form
           onSubmit={() => {
+            add(newStream);
             setNewStream("");
           }}
+          className="p-0 m-0"
         >
           <input
             type="text"
@@ -35,6 +38,7 @@ const AddStreams = () => {
             placeholder="Twitch Username"
             value={newStream}
             onChange={(e) => setNewStream(e.target.value)}
+            disabled={usernames.length === 9 ? true : false}
           />
         </form>
       </div>
