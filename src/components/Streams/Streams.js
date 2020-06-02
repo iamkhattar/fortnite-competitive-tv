@@ -11,6 +11,7 @@ import FiveStreams from "./Handler/FiveStreams/FiveStreams";
 import SixStreams from "./Handler/SixStreams/SixStreams";
 import SevenStreams from "./Handler/SevenStreams/SevenStreams";
 import EightStreams from "./Handler/EightStreams/EightStreams";
+import NineStreams from "./Handler/NineStreams/NineStreams";
 
 const Streams = () => {
   const usernames = useStoreState((state) => state.usernames);
@@ -76,6 +77,19 @@ const Streams = () => {
           stream6={usernames[5]}
           stream7={usernames[6]}
           stream8={usernames[7]}
+        />
+      ) : null}
+      {usernames.length === 9 ? (
+        <NineStreams
+          stream1={usernames[0]}
+          stream2={usernames[1]}
+          stream3={usernames[2]}
+          stream4={usernames[3]}
+          stream5={usernames[4]}
+          stream6={usernames[5]}
+          stream7={usernames[6]}
+          stream8={usernames[7]}
+          stream9={usernames[8]}
         />
       ) : null}
     </div>
