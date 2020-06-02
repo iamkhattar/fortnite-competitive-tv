@@ -9,17 +9,24 @@ import KeyStrokeHandler from "./components/KeyStrokeHandler/KeyStrokeHandler";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
+import model from "./model";
+
+import { StoreProvider, createStore } from "easy-peasy";
+
+const store = createStore(model);
 const App = () => {
   return (
-    <Router>
-      <KeyStrokeHandler />
-      <Route exact path="/" component={Landing} />
-      <Switch>
-        <Route exact path="/leaderboard" component={Leaderboard} />
-        <Route exact path="/addstreams" component={AddStreams} />
-        <Route exact path="/streams" component={Streams} />
-      </Switch>
-    </Router>
+    <StoreProvider store={store}>
+      <Router>
+        <KeyStrokeHandler />
+        <Route exact path="/" component={Landing} />
+        <Switch>
+          <Route exact path="/leaderboard" component={Leaderboard} />
+          <Route exact path="/addstreams" component={AddStreams} />
+          <Route exact path="/streams" component={Streams} />
+        </Switch>
+      </Router>
+    </StoreProvider>
   );
 };
 

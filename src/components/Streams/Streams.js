@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Streams.css";
 import OneStream from "./Handler/OneStream/OneStream";
 import NoStream from "./Handler/NoStream/NoStream";
@@ -6,13 +6,10 @@ import TwoStream from "./Handler/TwoStreams/TwoStreams";
 import ThreeStreams from "./Handler/ThreeStreams/ThreeStreams";
 import FourStreams from "./Handler/FourStreams/FourStreams";
 
+import { useStoreState } from "easy-peasy";
+
 const Streams = () => {
-  const [usernames, setUserNames] = useState([
-    "tfue",
-    "tsm_zexrow",
-    "tfue",
-    "bugha",
-  ]);
+  const usernames = useStoreState((state) => state.usernames);
   return (
     <div className="mainApp">
       {usernames.length === 0 ? <NoStream /> : null}
