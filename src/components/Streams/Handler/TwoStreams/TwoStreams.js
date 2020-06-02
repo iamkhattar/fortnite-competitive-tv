@@ -13,6 +13,7 @@ const TwoStream = ({ stream1, stream2 }) => {
           frameborder="0"
           scrolling={false}
           allowfullscreen={true}
+          title={stream1}
         />
       </div>
       <div className="row h-50 w-100 p-0 m-0">
@@ -23,6 +24,7 @@ const TwoStream = ({ stream1, stream2 }) => {
           frameborder="0"
           scrolling={false}
           allowfullscreen={true}
+          title={stream2}
         />
       </div>
     </div>

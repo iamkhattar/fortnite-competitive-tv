@@ -15,6 +15,7 @@ const ThreeStreams = ({ stream1, stream2, stream3 }) => {
           frameborder="0"
           scrolling={false}
           allowfullscreen={true}
+          title={stream1}
         />
       </div>
       <div className="row row-height w-100 m-0 p-0">
@@ -25,6 +26,7 @@ const ThreeStreams = ({ stream1, stream2, stream3 }) => {
           frameborder="0"
           scrolling={false}
           allowfullscreen={true}
+          title={stream2}
         />
       </div>
       <div className="row row-height w-100 m-0 p-0">
@@ -35,6 +37,7 @@ const ThreeStreams = ({ stream1, stream2, stream3 }) => {
           frameborder="0"
           scrolling={false}
           allowfullscreen={true}
+          title={stream3}
         />
       </div>
     </div>

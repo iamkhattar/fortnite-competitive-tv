@@ -17,6 +17,7 @@ const FourStreams = ({ stream1, stream2, stream3, stream4 }) => {
             frameborder="0"
             scrolling={false}
             allowfullscreen={true}
+            title={stream1}
           />
         </div>
         <div className="h-100 col-6 p-0 m-0">
@@ -27,6 +28,7 @@ const FourStreams = ({ stream1, stream2, stream3, stream4 }) => {
             frameborder="0"
             scrolling={false}
             allowfullscreen={true}
+            title={stream2}
           />
         </div>
       </div>
@@ -39,6 +41,7 @@ const FourStreams = ({ stream1, stream2, stream3, stream4 }) => {
             frameborder="0"
             scrolling={false}
             allowfullscreen={true}
+            title={stream3}
           />
         </div>
         <div className="h-100 col-6 p-0 m-0">
@@ -49,6 +52,7 @@ const FourStreams = ({ stream1, stream2, stream3, stream4 }) => {
             frameborder="0"
             scrolling={false}
             allowfullscreen={true}
+            title={stream4}
           />
         </div>
       </div>
