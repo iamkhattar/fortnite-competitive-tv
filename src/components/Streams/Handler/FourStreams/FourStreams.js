@@ -2,10 +2,10 @@ import React from "react";
 import "./FourStreams.css";
 
 const FourStreams = ({ stream1, stream2, stream3, stream4 }) => {
-  const url1 = "https://player.twitch.tv/?channel=" + stream1;
-  const url2 = "https://player.twitch.tv/?channel=" + stream2;
-  const url3 = "https://player.twitch.tv/?channel=" + stream3;
-  const url4 = "https://player.twitch.tv/?channel=" + stream4;
+  const url1 = "https://player.twitch.tv/?channel=" + stream1 + "&muted=true";
+  const url2 = "https://player.twitch.tv/?channel=" + stream2 + "&muted=true";
+  const url3 = "https://player.twitch.tv/?channel=" + stream3 + "&muted=true";
+  const url4 = "https://player.twitch.tv/?channel=" + stream4 + "&muted=true";
   return (
     <div className="mainApp">
       <div className="row h-50 w-100 m-0 p-0">

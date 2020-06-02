@@ -1,8 +1,8 @@
 import React from "react";
 import "./TwoStreams.css";
 const TwoStream = ({ stream1, stream2 }) => {
-  const url1 = "https://player.twitch.tv/?channel=" + stream1;
-  const url2 = "https://player.twitch.tv/?channel=" + stream2;
+  const url1 = "https://player.twitch.tv/?channel=" + stream1 + "&muted=true";
+  const url2 = "https://player.twitch.tv/?channel=" + stream2 + "&muted=true";
   return (
     <div className="mainApp">
       <div className="row h-50 w-100 p-0 m-0">
