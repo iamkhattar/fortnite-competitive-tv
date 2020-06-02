@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Streams.css";
-import OneStream from "./Handler/OneStream";
+import OneStream from "./Handler/OneStream/OneStream";
 import NoStream from "./Handler/NoStream/NoStream";
 
 const Streams = () => {
-  const [usernames, setUserNames] = useState([]);
+  const [usernames, setUserNames] = useState(["tfue"]);
   return (
     <div className="mainApp">
       {usernames.length === 0 ? <NoStream /> : null}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./OneStream.css";
 
 const OneStream = ({ stream1 }) => {
   const url = "https://player.twitch.tv/?channel=" + stream1;
