@@ -22,7 +22,7 @@ const NineStreams = ({
   const url8 = "https://player.twitch.tv/?channel=" + stream8 + "&muted=true";
   const url9 = "https://player.twitch.tv/?channel=" + stream8 + "&muted=true";
   return (
-    <div className="mainApp">
+    <div className="mainApp nine-player">
       <div className="row three-row w-100 m-0 p-0">
         <div className="h-100 col-4 p-0 m-0">
           <iframe

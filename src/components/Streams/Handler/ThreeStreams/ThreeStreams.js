@@ -6,7 +6,7 @@ const ThreeStreams = ({ stream1, stream2, stream3 }) => {
   const url2 = "https://player.twitch.tv/?channel=" + stream2 + "&muted=true";
   const url3 = "https://player.twitch.tv/?channel=" + stream3 + "&muted=true";
   return (
-    <div className="mainApp">
+    <div className="mainApp three-player">
       <div className="row three-row w-100 m-0 p-0">
         <iframe
           src={url1}

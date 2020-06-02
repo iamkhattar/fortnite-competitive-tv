@@ -26,7 +26,8 @@ const AddStreams = () => {
       </ul>
       <div>
         <form
-          onSubmit={() => {
+          onSubmit={(e) => {
+            e.preventDefault();
             add(newStream);
             setNewStream("");
           }}
