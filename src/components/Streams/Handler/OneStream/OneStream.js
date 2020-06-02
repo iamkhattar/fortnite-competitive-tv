@@ -12,7 +12,7 @@ const OneStream = ({ stream1 }) => {
         frameborder="0"
         scrolling={false}
         allowfullscreen={true}
-      ></iframe>
+      />
     </div>
   );
 };
