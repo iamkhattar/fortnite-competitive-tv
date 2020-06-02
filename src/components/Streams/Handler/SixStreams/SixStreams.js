@@ -1,12 +1,20 @@
 import React from "react";
-import "./FiveStreams.css";
+import "./SixStreams.css";
 
-const FiveStreams = ({ stream1, stream2, stream3, stream4, stream5 }) => {
+const SixStreams = ({
+  stream1,
+  stream2,
+  stream3,
+  stream4,
+  stream5,
+  stream6,
+}) => {
   const url1 = "https://player.twitch.tv/?channel=" + stream1;
   const url2 = "https://player.twitch.tv/?channel=" + stream2;
   const url3 = "https://player.twitch.tv/?channel=" + stream3;
   const url4 = "https://player.twitch.tv/?channel=" + stream4;
   const url5 = "https://player.twitch.tv/?channel=" + stream5;
+  const url6 = "https://player.twitch.tv/?channel=" + stream6;
   return (
     <div className="mainApp">
       <div className="row h-50 w-100 m-0 p-0">
@@ -45,7 +53,7 @@ const FiveStreams = ({ stream1, stream2, stream3, stream4, stream5 }) => {
         </div>
       </div>
       <div className="row h-50 w-100 m-0 p-0">
-        <div className="h-100 col-6 p-0 m-0">
+        <div className="h-100 col-4 p-0 m-0">
           <iframe
             src={url4}
             height="100%"
@@ -56,7 +64,7 @@ const FiveStreams = ({ stream1, stream2, stream3, stream4, stream5 }) => {
             title={stream4}
           />
         </div>
-        <div className="h-100 col-6 p-0 m-0">
+        <div className="h-100 col-4 p-0 m-0">
           <iframe
             src={url5}
             height="100%"
@@ -67,9 +75,20 @@ const FiveStreams = ({ stream1, stream2, stream3, stream4, stream5 }) => {
             title={stream5}
           />
         </div>
+        <div className="h-100 col-4 p-0 m-0">
+          <iframe
+            src={url6}
+            height="100%"
+            width="100%"
+            frameborder="0"
+            scrolling={false}
+            allowfullscreen={true}
+            title={stream6}
+          />
+        </div>
       </div>
     </div>
   );
 };
 
-export default FiveStreams;
+export default SixStreams;
