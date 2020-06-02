@@ -5,7 +5,7 @@ const TwoStream = ({ stream1, stream2 }) => {
   const url2 = "https://player.twitch.tv/?channel=" + stream2;
   return (
     <div className="mainApp">
-      <div className="row h-50 w-100">
+      <div className="row h-50 w-100 p-0 m-0">
         <iframe
           src={url1}
           height="100%"
@@ -15,7 +15,7 @@ const TwoStream = ({ stream1, stream2 }) => {
           allowfullscreen={true}
         />
       </div>
-      <div className="row h-50 w-100">
+      <div className="row h-50 w-100 p-0 m-0">
         <iframe
           src={url2}
           height="100%"
