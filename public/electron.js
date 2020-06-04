@@ -26,9 +26,12 @@ const createWindow = () => {
     width: 1024,
     height: 1024,
     title: "fortnite-competitive-tv",
+    titleBarStyle: "hiddenInset",
   });
 
   mainWindow.maximize();
+
+  mainWindow.setMenu(null);
 
   mainWindow.loadURL(
     isDev
