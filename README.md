@@ -18,6 +18,10 @@ The documentation for fortnite-competitive-tv can be viewed [here]().
 
 ## Application
 
+| ![Home](assets/screenshots/1.jpg) | ![Streams](assets/screenshots/3.jpg) | ![Leaderboard](assets/screenshots/2.jpg) |
+| --------------------------------- | :----------------------------------: | ---------------------------------------- |
+
+
 ## License
 
 MIT
