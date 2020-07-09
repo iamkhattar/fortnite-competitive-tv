@@ -4,7 +4,7 @@ A Desktop Application to watch competivive Fortnite matches along with a live le
 
 ## Documentation
 
-The documentation for fortnite-competitive-tv can be viewed [here](https://iamkhattar.github.io/fortnite-competitive-tv).
+The documentation for fortnite-competitive-tv can be viewed [here](https://iamkhattar.github.io/fortnite-competitive-tv/).
 
 ## Technology Stack
 
